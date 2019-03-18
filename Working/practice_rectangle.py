@@ -6,17 +6,23 @@ class Rectangle(object):
 
 
 def get_area(rec):
+    """Computes the area of a reactange
+    :param rec: a rectangle object
+    :return: area of rec
+    """
 
-    area = rec.width * rec.height
-    return area
+    return rec.width * rec.height
 
 
 def main():
 
+    user_width = float(input("Enter width: "))
+    user_height = float(input("Enter height: "))
+
     rect1 = Rectangle()
 
-    rect1.width = int(input("Enter width: "))
-    rect1.height = int(input("Enter height: "))
+    rect1.width = user_width
+    rect1.height = user_height
 
     print("The area of that rectangle is", get_area(rect1))
 
