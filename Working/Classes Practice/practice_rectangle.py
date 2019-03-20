@@ -6,7 +6,7 @@ class Rectangle(object):
 
 
 def get_area(rec):
-    """Computes the area of a reactange
+    """Computes the area of a rectangle
     :param rec: a rectangle object
     :return: area of rec
     """
